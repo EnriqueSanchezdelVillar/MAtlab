@@ -43,6 +43,7 @@ nota: 3
 
 LLAMADA DE UNA FUNCION EN MATLAB  
 [variables de salida]=Fun(variables de entrada)  
+[y1,y2]=nombredelaFuncion(x)
 
 ## Operaciones con matrices  
 
@@ -69,7 +70,8 @@ diag([1 2 3 4] , -1) la mueve hacia abajo
 diag([1 2 3 4] , 2) la mueve hacia arriba  
 la inversa de una matriz ecuación D * x= b --> b vector columna   
 x = D\b
-
+Transpuesta A'  
+inversa pinv(A)
 
 
 [X,Y]=meshgrid(x,y);
@@ -80,6 +82,14 @@ surf(x,y,z)
 shading interp  elimina rallas y da mas color  
 shading faceted  
 colormap copper 
+plot(x,y)  
+hold on --> para dibujar otra  
+legend('lenyenda1','leyenda2')  
+title('titulo')  
+close --> cerrar dibujo  
+figure(1);
+imagesc(A)--> colores por números de la matriz  
+
 
 
 
