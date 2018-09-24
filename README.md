@@ -40,10 +40,16 @@ info(1)
 nombre:  Juan  
 fecha:  1/4/99  
 nota: 3  
+ 
+xlswite('Plantilla.xls',Nodos,'Nodos','B2')    
+xlsread('Plantilla.xls','Nodos')  
+hoja de cálculo Plantilla pestaña Nodos
+
 
 LLAMADA DE UNA FUNCION EN MATLAB  
 [variables de salida]=Fun(variables de entrada)  
-[y1,y2]=nombredelaFuncion(x)
+function  
+[y1,y2]=nombredelaFuncion(x)  
 
 ## Operaciones con matrices  
 
@@ -58,6 +64,9 @@ xlabel ('Ejex')
 ylabel('Eje y')
 axis([-1 1 -0.1 2.2])
 axis([ejex ejey])  
+sort --> ordena vectores o tablas  
+find(A(:,1)==1)--> matriz A en todas las filas en la primera columna cual tiene valor igual a 1  
+
 
 
 D=[A C ;B] 
@@ -97,6 +106,45 @@ imagesc(A)--> colores por números de la matriz
 **Bucle**  
 y=NaN(1,4); for i=i:4, y(i)=sin(x(i)), end
 y=NaN(1,4); for i=i:length(x), y(i)=sin(x(i)), end
+
+
+**Rutina**
+function [y,dy]=Mifunction(x)  
+
+    y =2*x.^2+x+3;  
+end  
+
+Fichero principal  
+[y,dy]= Mifunction(3)
+  return  -->  y= 24 dy=13  
+  
+if nargin<2 --> si el número de argumentos de entrada es menor que dos  
+
+
+** BARRAS**  
+
+ Nodos y Barras  
+ Nodos con cordenadas en el plano (x,y)  
+ 
+ Nodos  
+ (x1,y1) primer  
+ (x2,y2) segundo  
+ (x3,y3) tercero  
+ 
+ Barras --> Matriz barras (Matriz de conectividad)  
+ 
+           *Nodos*  
+ Barra  1------    1 ---      2  
+ Barra  2------    2 ---      3  
+ 
+   
+ 
+
+
+  
+  
+
+
 
 
 
