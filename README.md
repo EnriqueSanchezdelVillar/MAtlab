@@ -137,9 +137,10 @@ if nargin<2 --> si el número de argumentos de entrada es menor que dos
  Barra  1------    1 ---      2  
  Barra  2------    2 ---      3  
  
-   
- 
-
+   VAlor mas grande de una matriz  
+ kmax=max(abs(K(:)))  
+máxima relacion para que el valor sea máximo es 1e16  
+el límite total seria k_inf=1e16  
 
   
   
